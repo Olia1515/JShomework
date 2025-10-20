@@ -18,9 +18,8 @@ let isAccess = false
 
 
 if ((isAdmin === true || isVerifiedUser === true) && (hasSpecialPermission === true || hasTemporaryPass === true))
-{isAccess === true
+{isAccess = true
     console.log('Доступ разрешен')
 } else {
-    
     console.log('Доступ Запрещен')
 }// your code
