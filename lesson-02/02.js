@@ -9,14 +9,13 @@
 
 let dice1 = Math.floor(Math.random() * 5);// your code
 let dice2 = Math.floor(Math.random() * 5);// your code
-let isWinningDouble // your code
+let isWinningDouble = true // your code
 
 
 console.log('Первый бросок: ' + dice1)
 console.log('Второй бросок: ' + dice2)
-if ((isWinningDouble === dice1 && isWinningDouble === dice2) && isWinningDouble > 3) {
+if ((dice1 > 3) && (dice2 >3 ) && ( dice1 === dice2)) {
   console.log('Выигрышный дубль!')
 } else {
   console.log('Не выигрышный дубль.')
 }
-
