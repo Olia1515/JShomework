@@ -8,16 +8,18 @@
 */
 
 // тестовые данные (значения можно менять)
-const isAdmin = true
+const isAdmin = false
 const isVerifiedUser = false
-const hasSpecialPermission = false
-const hasTemporaryPass = false
+const hasSpecialPermission = true
+const hasTemporaryPass = true
 
 let isAccess 
 
 
 isAccess === true
-if((isAdmin === true || isVerifiedUser === true) && (hasSpecialPermission === true || hasTemporaryPass === true)) {le.log('Доступ разрешен')
+if ((isAdmin === true || isVerifiedUser === true) && (hasSpecialPermission === true || hasTemporaryPass === true))
+{isAccess === true
+    console.log('Доступ разрешен')
 } else {
     console.log('Доступ Запрещен')
 }// your code
