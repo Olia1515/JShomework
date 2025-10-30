@@ -8,4 +8,4 @@ if(a > b && a > c) {
     } else if(c > a && c > b){
         console.log(c)
     }
-}findLargest(2, 5, -8)
+}findLargest(1, 2, 3)
