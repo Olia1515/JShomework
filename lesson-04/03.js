@@ -17,4 +17,16 @@ findCommonElements([1, 2, 3], [2, 3, 4]) // [2, 3]
 Подсказка: можно использовать функцию `includesElement`, которую мы написали ранее. Переписывать её не нужно, она доступна по всему проекту за счёт hoisting.
 */
 
-function findCommonElements() {}
+function findCommonElements(array1, array2) {
+  let common = [] // массив для общих элементов
+
+  for (let i = 0; i < array1.length; i++) {
+    let current = array1[i]
+    // если элемент из первого массива есть во втором и ещё не добавлен — добавляем
+    if (includesElement(array2, current) && !includesElement(common, current)) {
+      common.push(current)
+    }
+  }
+
+  return common
+}
