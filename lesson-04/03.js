@@ -18,15 +18,13 @@ findCommonElements([1, 2, 3], [2, 3, 4]) // [2, 3]
 */
 
 function findCommonElements(array1, array2) {
-  let common = [] // массив для общих элементов
+  let common = [] 
 
   for (let i = 0; i < array1.length; i++) {
     let current = array1[i]
-    // если элемент из первого массива есть во втором и ещё не добавлен — добавляем
     if (includesElement(array2, current) && !includesElement(common, current)) {
       common.push(current)
     }
   }
-
-  return common
-}
+    return common
+    }
