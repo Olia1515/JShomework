@@ -36,7 +36,7 @@ nextBtn.addEventListener("click", () => {
 prevBtn.addEventListener("click", () => {
   count--;
   
-  if (count <= 0) {
+  if (count < 0) {
     count = WEB_TECH_IMAGES.length - 1
   }
   
