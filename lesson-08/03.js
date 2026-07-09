@@ -12,7 +12,7 @@
 function truncate(str, maxLength) {
   if(str.length > maxLength){
       return str.slice(0, maxLength) + '...'
-  }
+  } else return str
 }
 
-console.log(truncate("Dct xnj z [jxe crfpfnm ", 2))
+console.log(truncate("пустая строка ", 14))
