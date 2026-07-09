@@ -10,5 +10,9 @@
 */
 
 function truncate(str, maxLength) {
-  // your code
+  if(str.length > maxLength){
+      return str.slice(0, maxLength)
+  }
 }
+
+console.log(truncate("Dct xnj z [jxe crfpfnm ", 2))
