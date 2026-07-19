@@ -15,4 +15,4 @@ function truncate(str, maxLength) {
   } else return str
 }
 
-console.log(truncate("пустая строка ", 14))
+console.log(truncate("1234567890", 9))
